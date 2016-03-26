@@ -1,5 +1,4 @@
 {
-"taskDefinition": {
     "volumes": [],
     "taskDefinitionArn": "arn:aws:ecs:us-west-2:820523793950:task-definition/flask-signup:1",
     "containerDefinitions": [
@@ -20,4 +19,4 @@
     "family": "flask-signup",
     "revision": 1
 }
-}
+
