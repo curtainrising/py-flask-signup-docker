@@ -1,0 +1,25 @@
+# sed -e "s;%BUILD_NUMBER%;0;g" flask-signup.json > flask-signup-v_0.json
+# aws ecs register-task-definition --cli-input-json file://flask-signup-v_0.json
+{
+"taskDefinition": {
+    "volumes": [],
+    "taskDefinitionArn": "arn:aws:ecs:us-west-2:820523793950:task-definition/flask-signup:1",
+    "containerDefinitions": [
+        {
+            "name": "flask-signup",
+            "image": "curtainrising/flask-signup:v_0",
+            "cpu": 10,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 80
+                }
+            ],
+            "memory": 256,
+            "essential": true
+        }
+    ],
+    "family": "flask-signup",
+    "revision": 1
+}
+}
