@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "flask-signup",
-            "image": "https://hub.docker.com/r/curtainrising/flask-signup:v_0",
+            "image": "https://hub.docker.com/r/curtainrising/flask-signup",
             "cpu": 10,
             "portMappings": [
                 {
