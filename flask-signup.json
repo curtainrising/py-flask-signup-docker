@@ -1,5 +1,3 @@
-# sed -e "s;%BUILD_NUMBER%;0;g" flask-signup.json > flask-signup-v_0.json
-# aws ecs register-task-definition --cli-input-json file://flask-signup-v_0.json
 {
 "taskDefinition": {
     "volumes": [],
